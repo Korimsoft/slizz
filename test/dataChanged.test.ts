@@ -55,7 +55,11 @@ describe('A dataChanged reducer', () => {
     });
 
     it('Should not change state when the dispatched item is null', () => {
-        const initialState = givenInitialState();
+        const initialItem = {
+            id: 'testid-1',
+            prop1: 'something'
+        }
+        const initialState = givenInitialState(initialItem);
 
         const newState = dataChanged(initialState, aPayloadAction(null as unknown as TestingData));
 

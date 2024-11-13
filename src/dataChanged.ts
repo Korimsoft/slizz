@@ -4,7 +4,9 @@ import {PayloadAction} from '@reduxjs/toolkit';
 
 export function dataChanged<T extends ObjectWithId>(state: SliceState<T>, action: PayloadAction<T>): SliceState<T> {
     const item = action.payload as T;
-    if(isNil(item)) {}
+    if(isNil(item)) {
+        return state;
+    }
 
     if(!state.allIds.find(id => id === item.id)) {
         state.allIds.push(item.id);
