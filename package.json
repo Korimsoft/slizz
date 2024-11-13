@@ -1,0 +1,43 @@
+{
+  "name": "korimsoft-slizz",
+  "version": "0.0.1",
+  "description": "Helpers and types to ease Redux store works.",
+  "main": "./dist/index.js",
+  "types": "./dist/type-decl/index.d.ts",
+  "scripts": {
+    "compile": "webpack ",
+    "build": "npm run compile",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "preversion": "npm run test"
+  },
+  "keywords": [
+    "Korimsoft",
+    "Redux",
+    "React-Redux",
+    "Slice",
+    "Redux-Toolkit"
+  ],
+  "author": "Korimsoft [Tomáš Korima]",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Korimsoft/slizz.git"
+  },
+  "dependencies": {
+    "korimsoft-tyfun": "^0.9.1",
+    "@reduxjs/toolkit": "^2.2.7"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "@types/lodash": "^4.17.7",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.2",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
