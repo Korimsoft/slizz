@@ -1,6 +1,6 @@
 {
   "name": "korimsoft-slizz",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Helpers and types to ease Redux store works.",
   "main": "./dist/index.js",
   "types": "./dist/type-decl/index.d.ts",
