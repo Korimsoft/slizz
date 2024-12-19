@@ -8,7 +8,7 @@ module.exports = {
         path: path.resolve(__dirname + '/dist/'),
         filename: 'index.js',
         library: {
-            name: 'tyfun-[version]',
+            name: 'slizz-[version]',
             type: 'umd',
         },
         clean: true,
