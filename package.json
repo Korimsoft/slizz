@@ -1,9 +1,12 @@
 {
   "name": "korimsoft-slizz",
   "version": "0.1.0",
-  "description": "Helpers and types to ease Redux store works.",
+  "description": "Korimsoft's Slizz - Helpers and types to ease Redux store works.",
   "main": "./dist/index.js",
   "types": "./dist/type-decl/index.d.ts",
+  "files": [
+    "./dist/**"
+  ],
   "scripts": {
     "compile": "webpack ",
     "build": "npm run compile",
